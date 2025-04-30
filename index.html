@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e9f7f4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .header {
+      background: #d0f1e7;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #056e4d;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header svg {
+      width: 20px;
+      height: 20px;
+      fill: #056e4d;
+    }
+
+    .message {
+      background: #c0ece3;
+      padding: 15px 20px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .message span {
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .flight-header {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .flight {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .flight-info {
+      display: flex;
+      gap: 15px;
+    }
+
+    .airline-logo {
+      width: 50px;
+    }
+
+    .flight-details {
+      font-size: 14px;
+    }
+
+    .flight-details b {
+      font-size: 16px;
+    }
+
+    .flight-meta {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .total {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .total-note {
+      color: green;
+      font-size: 12px;
+    }
+
+    .price-section {
+      padding: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .price {
+      color: #056e4d;
+      font-size: 24px;
+    }
+
+    .view-link {
+      font-size: 13px;
+      color: #056e4d;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+    Booking Successful
+  </div>
+
+  <div class="message">
+    Congratulations! Your booking is confirmed. We will be sending your E-Ticket to
+    <span>jackfayama@gmail.com</span> and <span>966-540656737</span> shortly.<br>
+    In case the ticket is not issued, we will provide you with full refund or alternative options at no extra cost.
+  </div>
+
+  <div class="section">
+    <div class="flight-header">ONE WAY FLIGHT</div>
+
+    <div class="flight">
+      <div class="flight-info">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Saudia_Airlines_logo.svg/1280px-Saudia_Airlines_logo.svg.png" class="airline-logo">
+        <div class="flight-details">
+          <b>Nairobi (NBO)</b><br>
+          02:40 &nbsp; Jomo Kenyatta Intl<br>
+          <b>Jeddah (1/2) (JED)</b><br>
+          06:30 &nbsp; King Abdulaziz Intl<br>
+          Saudia SV-430
+        </div>
+      </div>
+      <div class="flight-meta">
+        9 h 45 m | Non stop<br>
+        PNR <b>1688889930996589</b>
+      </div>
+    </div>
+
+    <div class="flight">
+      <div class="flight-info">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Flynas_logo.svg/2560px-Flynas_logo.svg.png" class="airline-logo">
+        <div class="flight-details">
+          <b>Jeddah (JED)</b><br>
+          10:35 &nbsp; King Abdulaziz Intl<br>
+          <b>Riyadh (2/2) (RUH)</b><br>
+          12:25 &nbsp; King Khaled Intl<br>
+          Flynas XY-20
+        </div>
+      </div>
+      <div class="flight-meta">
+        9 h 45 m | Non stop<br>
+        PNR <b>E7SW7C</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="price-section">
+    <div class="total-note">You saved SAR 61.33</div>
+    <div class="total price">SAR 1,232.64</div>
+    <div class="view-link">View Fare Breakup</div>
+  </div>
+</div>
+
+</body>
+</html>
